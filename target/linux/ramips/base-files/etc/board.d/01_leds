@@ -320,6 +320,7 @@ tl-wr841n-v13)
 	;;
 tplink,tl-wr841n-v14|\
 tplink,tl-wr841n-v14-16m)
+	ucidef_set_led_wlan "wlan2g" "wlan2g" "$boardname:green:wlan" "phy0tpt"
 	ucidef_set_led_switch "lan" "lan" "$boardname:green:lan" "switch0" "0x1e"
 	ucidef_set_led_switch "wan" "wan" "$boardname:green:wan" "switch0" "0x01"
 	;;
