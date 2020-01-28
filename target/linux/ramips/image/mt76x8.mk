@@ -274,6 +274,20 @@ define Device/tplink_tl-wr841n-v14
 endef
 TARGET_DEVICES += tplink_tl-wr841n-v14
 
+define Device/tplink_tl-wr841n-v14-16m
+  $(Device/tplink)
+  DTS := TL-WR841NV14-16M
+  IMAGE_SIZE := 16256k
+  DEVICE_TITLE := TP-Link TL-WR841N v14 16MB
+  TPLINK_FLASHLAYOUT := 16Mmtk
+  TPLINK_HWID := 0x08410014
+  TPLINK_HWREV := 0x1
+  TPLINK_HWREVADD := 0x14
+  TPLINK_HVERSION := 3
+  IMAGE/tftp-recovery.bin := pad-extra 64k | $$(IMAGE/factory.bin)
+endef
+TARGET_DEVICES += tplink_tl-wr841n-v14-16m
+
 define Device/tplink_c20-v4
   $(Device/tplink)
   DTS := ArcherC20v4

@@ -249,6 +249,7 @@ ramips_setup_interfaces()
 	tl-wr840n-v5|\
 	tl-wr841n-v13|\
 	tplink,tl-wr841n-v14|\
+	tplink,tl-wr841n-v14-16m|\
 	u7628-01-128M-16M|\
 	ubnt-erx|\
 	ubnt-erx-sfp|\
